@@ -1,0 +1,216 @@
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:可以，写入吧
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:mywho
+
+本AI请求工具的参数:addfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:可以写入
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:mywho
+
+本AI请求工具的参数:addfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:可以写入
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:mywho
+
+本AI请求工具的参数:addfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:可以，写入吧
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:mywho
+
+本AI请求工具的参数:addfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+asd指示:这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:可以，写入吧
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:mywho
+
+本AI请求工具的参数:addfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+asd指示:这是要写入的aiasd这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:可以，写入吧
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:asdwho
+
+本AI请求工具的参数:addfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+asd指示:这是要写入的aiasd这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:可以写入
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:asdwho
+
+本AI请求工具的参数:addfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+asd指示:这是要写入的aiasd这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:可以，写入吧
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:asdwho
+
+本AI请求工具的参数:addfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+asd指示:这是要写入的aiasd这是我的函数工具my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:写入
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:asdwho
+
+本AI请求工具的参数:addfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+本AI使用工具:tools_make
+
+asd指示:这是要写入的aiasd这是我的函数工具名称，只能用这个名称my.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:这是要写入的aiasd这是我的函数工具名称，只能用这个名称add.py这是它的内容def add(a:int,b:int):
+   """执行加法的工具"""
+   """"a和b都是加数"""
+
+   return a+b请你帮我给他编写个描述
+
+asd指示:写入
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:asdwho
+
+本AI请求工具的参数:add.pyfunction_name
+
+本AI请求工具的参数:{'name': 'add', 'description': '执行加法运算的工具，接收两个整数并返回它们的和', 'parameters': {'type': 'object', 'properties': {'a': {'type': 'integer', 'description': '加数a，参与加法运算的第一个整数'}, 'b': {'type': 'integer', 'description': '加数b，参与加法运算的第二个整数'}}, 'required': ['a', 'b']}, 'returns': {'type': 'integer', 'description': '返回两个加数的和'}}des
+
+本AI使用工具:tools_make
+
+本AI用完一轮工具后回复:已成功写入！`add` 函数工具的描述文件已为 AI `asd` 创建完毕，大模型可以根据此描述调用该加法工具了。
+
+asd指示:
