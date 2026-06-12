@@ -10,12 +10,13 @@ main.py  //接线员
 --ai clone //agent的模板文件，含有agent需要的基本文件
       --clone类  //agent的模板，定义agent的类
       --des类    //agent工具的描述
+      --tools类  //agent工具
         
 —生产程序  //根据人设和功能创建agent实例，并且准备好基本文件
 
 —记忆概括ai //提取agent的记忆进行概括。上一次概括后，原记忆会暂时储存，直到下一次概括。不过这里只实现类。
 
-—入出des ai  //写入和删除tools的描述。这里只实现类
+—入出des tools ai  //写入和删除tools的描述。这里只实现类
 --人设修改ai
 
 

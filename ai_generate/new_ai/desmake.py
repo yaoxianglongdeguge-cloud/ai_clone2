@@ -25,8 +25,7 @@ if __name__=="__main__":
      
        function_name=input()# 有后缀
        if function_name=="quit":
-        break
-      
+          break
 
        with open(function_name,'r',encoding='utf-8') as f:
         function_content=f.read()
@@ -39,7 +38,7 @@ if __name__=="__main__":
          if out_input2=="quit":
            break
          result=module.other_run_self(myname,out_input2)
-      shutil.move(stay_dir/function_name,stay_dir/"ai_tools"/"tools"/function_name)
+       shutil.move(stay_dir/function_name,stay_dir/"ai_tools"/"tools"/function_name)
     elif answer=="d":
        
        while True:
