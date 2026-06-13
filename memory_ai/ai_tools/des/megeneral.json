@@ -1,0 +1,28 @@
+{
+  "type": "function",
+  "function": {
+    "name": "megeneral",
+    "description": "将指定的记忆内容写入对应 AI 的记忆文件中，支持备份旧记忆并覆盖写入新记忆",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "who": {
+          "type": "string",
+          "description": "被写入记忆的 AI 名称，对应其文件夹名称，如 butler_ai, customer_ai"
+        },
+        "out_input": {
+          "type": "string",
+          "description": "要写入的记忆内容，即需要 AI 记住的信息文本"
+        }
+      },
+      "required": [
+        "who",
+        "out_input"
+      ]
+    },
+    "returns": {
+      "type": "null",
+      "description": "无返回值，写入操作直接作用于文件系统"
+    }
+  }
+}
