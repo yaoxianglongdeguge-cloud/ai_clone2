@@ -96,20 +96,21 @@ class Clone_ai:
 
            #调用函数
             func=self.tools.tools[function_name]
-            result=func(**arguments)
+            func_result=func(**arguments)
+            result=str(func_result)
 
             with open(self.memory, 'a', encoding='utf-8') as f:
                memory=f.write(f"\n本AI使用工具:{function_name}\n")
 
-            solve_result+=result
+            solve_result+=str(result)
 
 
-        upload_mes={
-            "role":"tool",
-            "tool_call_id":tool.id,
-            "content":result
-        }
-        send_mes.append(upload_mes)
+            upload_mes={
+             "role":"tool",
+             "tool_call_id":tool.id,
+             "content":result
+            }
+            send_mes.append(upload_mes)
 
         final_mes=self.client.chat.completions.create(
         model=self.MODEL_ID,

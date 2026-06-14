@@ -13,11 +13,7 @@ class Ai_des:
 
 
   self.tools_des=[]
-<<<<<<< HEAD
   for file_path in self.stay_dir.glob("*.json"):
-=======
-  for file_path in self.stay_dir.glob("*.txt"):
->>>>>>> b739dcf98c958f6d26502fe4b63b7ab9cbdad4a3
 
    with open(file_path,'r',encoding='utf-8') as f:
    
