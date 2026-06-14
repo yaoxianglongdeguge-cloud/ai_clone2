@@ -6,9 +6,9 @@ import sys
 
 
 if __name__=="__main__":
-   stay_dir=Path(__file__).parent
+   stay_dir=Path(__file__).parent.parent.parent
    myname=stay_dir.name
-   current_dir=Path(__file__).parent.parent
+   current_dir=stay_dir.parent
    sys.path.insert(0, str(current_dir))
    #这一块主要是定位当前文件
 
@@ -28,11 +28,17 @@ if __name__=="__main__":
 
        print("请问您要添加哪个工具？")
      
-       function_name=input()# 有后缀
+       function_name=input()# 无后缀
        if function_name=="quit":
           break
+       
+       func_dir=Path(function_name)
 
-       with open(function_name,'r',encoding='utf-8') as f:
+       pattern = "++main++*" 
+       matching_files = list(func_dir.glob(pattern))
+       func_path = matching_files[0]
+
+       with open(func_path,'r',encoding='utf-8') as f:
         function_content=f.read()
 
        out_input="这是要写入的ai:"+myname+"这是我的函数工具名称，只能用这个名称:"+function_name+"这是它的内容:"+function_content+"请你帮我给他编写个描述"
@@ -43,21 +49,21 @@ if __name__=="__main__":
          if out_input2=="quit":
            break
          result=module.other_run_self(myname,out_input2)
-       shutil.move(stay_dir/function_name,stay_dir/"ai_tools"/"tools"/function_name)
-
+      
     elif answer=="d":
        
        while True:
         print("请问您要删除哪个工具？")
      
-        function_name=input()# 有后缀
+        function_name=input()# 无后缀
+        func_dir=function_name
         if function_name=="quit":
          break
-        func_name=Path(function_name).stem+".txt"
+        func_name=function_name+".json"
         des_file=stay_dir/"ai_tools"/"des"/func_name
-        tools_file=stay_dir/"ai_tools"/"tools"/function_name
+        tools_dir=stay_dir/"ai_tools"/"tools"/func_dir
         Path(des_file).unlink()
-        Path(tools_file).unlink()
+        shutil.rmtree(func_dir)
 
 
     elif answer=="m":
@@ -70,11 +76,12 @@ if __name__=="__main__":
 
       while True:
 
-       print("请问您要修改哪个工具描述？'.json'")
+       print("请问您要修改哪个工具描述？")
        
-       function_name=input()# 有后缀
+       function_name=input()# 无后缀
        if function_name=="quit":
           break
+       function_name=function_name+".json"
        
        func_path=stay_dir/"ai_tools"/"des"/function_name#要修改的函数位置
 
