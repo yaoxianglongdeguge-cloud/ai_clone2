@@ -571,3 +571,145 @@ word_agent指示:写入
 ```
 
 不过我想提醒您，您之前提到"里面可能有问题"，但我检查后没有发现这个描述文件有明显的问题——它的结构完整、语法正确。如果您发现有具体的问题需要修改，请告诉我具体的修改内容，我可以重新生成并写入！
+
+memory_ai指示:这是要写入的ai:memory_ai这是我的函数工具名称，只能用这个名称:w_write这是它的内容:import os
+import json
+from dotenv import load_dotenv
+from openai import OpenAI
+
+
+def w_write(path:str,word:str):
+
+    """当下达写入关键词的指令之后，调用该工具，把关键词写入文件"""
+
+    """path:关键词写入的路径，如果关键词是用于api搜索的关键词，则路径是本文件夹下的‘search_word.txt’，如果是用于筛选，则路径是本文件夹下的‘screen_word.txt’文件"""
+    
+    """worddescription":"需要写入文件的关键词"""
+
+    
+    with open(path, 'w', encoding='utf-8') as f:
+     memory=f.write(word)
+     return word
+
+
+
+请你帮我给他编写个描述
+
+memory_ai指示:写入
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:memory_aiwho
+
+本AI请求工具的参数:w_writefunction_name
+
+本AI请求工具的参数:{'type': 'function', 'function': {'name': 'w_write', 'description': '将指定的关键词内容写入指定路径的文件中。用于 API 搜索关键词时写入 search_word.txt，用于筛选关键词时写入 screen_word.txt', 'parameters': {'type': 'object', 'properties': {'path': {'type': 'string', 'description': "关键词写入的目标文件路径，如果关键词用于API搜索则路径为'search_word.txt'，如果用于筛选则路径为'screen_word.txt'"}, 'word': {'type': 'string', 'description': '需要写入文件的关键词内容'}}, 'required': ['path', 'word']}, 'returns': {'type': 'object', 'description': '返回写入的关键词内容'}}}des
+
+本AI使用工具:tools_make
+
+本AI用完一轮工具后回复:✅ **写入成功！**
+
+已为 `memory_ai` 的 `w_write` 函数完成描述文件写入，文件路径为 `memory_ai/w_write.json`。
+
+写入的描述内容如下：
+
+```json
+{
+  "type": "function",
+  "function": {
+    "name": "w_write",
+    "description": "将指定的关键词内容写入指定路径的文件中。用于 API 搜索关键词时写入 search_word.txt，用于筛选关键词时写入 screen_word.txt",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "关键词写入的目标文件路径，如果关键词用于API搜索则路径为'search_word.txt'，如果用于筛选则路径为'screen_word.txt'"
+        },
+        "word": {
+          "type": "string",
+          "description": "需要写入文件的关键词内容"
+        }
+      },
+      "required": ["path", "word"]
+    },
+    "returns": {
+      "type": "object",
+      "description": "返回写入的关键词内容"
+    }
+  }
+}
+```
+
+这一版怎么样？
+
+memory_ai指示:这是要写入的ai:memory_ai这是我的函数工具名称，只能用这个名称:w_write这是它的内容:import os
+import json
+from dotenv import load_dotenv
+from openai import OpenAI
+
+
+def w_write(path:str,word:str):
+
+    """当下达写入关键词的指令之后，调用该工具，把关键词写入文件"""
+
+    """path:关键词写入的路径，如果关键词是用于api搜索的关键词，则路径是本文件夹下的‘search_word.txt’，如果是用于筛选，则路径是本文件夹下的‘screen_word.txt’文件"""
+    
+    """worddescription":"需要写入文件的关键词"""
+
+    
+    with open(path, 'w', encoding='utf-8') as f:
+     memory=f.write(word)
+     return word
+
+
+
+请你帮我给他编写个描述
+
+memory_ai指示:写入
+
+本AI请求工具:tools_make
+
+本AI请求工具的参数:memory_aiwho
+
+本AI请求工具的参数:w_writefunction_name
+
+本AI请求工具的参数:{'type': 'function', 'function': {'name': 'w_write', 'description': '将指定的关键词内容写入指定路径的文件中。用于 API 搜索关键词时写入 search_word.txt，用于筛选关键词时写入 screen_word.txt', 'parameters': {'type': 'object', 'properties': {'path': {'type': 'string', 'description': "关键词写入的目标文件路径，如果关键词用于API搜索则路径为'search_word.txt'，如果用于筛选则路径为'screen_word.txt'"}, 'word': {'type': 'string', 'description': '需要写入文件的关键词内容'}}, 'required': ['path', 'word']}, 'returns': {'type': 'object', 'description': '返回写入的关键词内容'}}}des
+
+本AI使用工具:tools_make
+
+本AI用完一轮工具后回复:✅ **写入成功！**
+
+已为 `memory_ai` 的 `w_write` 函数完成描述文件写入，文件路径为 `memory_ai/w_write.json`。
+
+写入的描述内容如下：
+
+```json
+{
+  "type": "function",
+  "function": {
+    "name": "w_write",
+    "description": "将指定的关键词内容写入指定路径的文件中。用于 API 搜索关键词时写入 search_word.txt，用于筛选关键词时写入 screen_word.txt",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "关键词写入的目标文件路径，如果关键词用于API搜索则路径为'search_word.txt'，如果用于筛选则路径为'screen_word.txt'"
+        },
+        "word": {
+          "type": "string",
+          "description": "需要写入文件的关键词内容"
+        }
+      },
+      "required": ["path", "word"]
+    },
+    "returns": {
+      "type": "object",
+      "description": "返回写入的关键词内容"
+    }
+  }
+}
+```
+
+这一版怎么样？

@@ -5,7 +5,7 @@ def megeneral(who:str,out_input:str):
     """who:被写入ai的名字也是他所在文件夹名称"""
     """out_input:写入的记忆内容"""
 
-    current_dir=Path(__file__).parent.parent.parent.parent
+    current_dir=Path(__file__).parent.parent.parent.parent.parent
     aim_dir=current_dir/who
     aim_file1=aim_dir/"memory.txt"
     aim_file2=aim_dir/"memoryed.txt"
