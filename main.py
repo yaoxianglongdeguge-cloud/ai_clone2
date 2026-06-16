@@ -1,14 +1,33 @@
 import importlib
+from ai_clone_class import ai_clone
+import json
+import agent_call_queue
+
 
 if __name__=="__main__":
+
+  with open("agent_call",'r',encoding='utf-8') as f:
+    agent_name=json.load(f)
+  
+  agents={}
+  for name in agent_name:
+   agent_creat=ai_clone.Ai_clone(agent_name)
+   agents[name]=agent_creat
+
+  agent_call_queue=[]
+
   while True:
-    print("请问您找谁? 请输入他的名字")
-    print("若要停止请输入quit")
-    name=input()
-    if name=="quit":
+    for called in agent_call_queue:
+     if agent_call_queue:
+                print()
+     else:
+
+      print("请问您找谁? 请输入他的名字")
+      print("若要停止请输入quit")
+      name=input()
+      if name=="quit":
         break
 
-    agent=importlib.import_module(f"{name}.ai_self")#由于这是程序入口，在探测路径上，只需要一行.只需要导入agent运行函数文件，而不是文件夹。因为运行文件实例化agent时，他会自己获取自己所在文件夹。
     print(f"{name}已经就绪")
     while True:
      print("若要停止请输入quit")

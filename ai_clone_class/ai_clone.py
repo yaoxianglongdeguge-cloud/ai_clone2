@@ -11,6 +11,8 @@ class Clone_ai:
  
  def __init__(self,ai_name:str):
   
+  #agent无论在哪实例化注册，都会从这个文件开始寻址。
+  
   current_dir = Path(__file__).parent.parent #类所在的文件夹的上级文件夹，即根目录
   self.stay_dir=current_dir/ai_name  #实例化后ai所在文件夹
 
@@ -45,8 +47,8 @@ class Clone_ai:
     with open(self.role, 'r', encoding='utf-8') as f:
      role_input=f.read()
     send_mes = [
-        {"role":"system","content":role_input},
-        {"role":"system","content":memory_input},
+        {"role":"system","content":"这是你的人设："+role_input},
+        {"role":"system","content":"这是你的记忆："+memory_input},
         {"role":"user","content":who+":"+out_input}
 
     ]
