@@ -69,6 +69,9 @@ class Clone_ai:
 
     print(ai_speak)
 
+    with open(self.memory,  'a', encoding='utf-8') as f:
+      memory=f.write(f"\n我说:{ai_speak}\n")
+
     solve_result=""
 
     if ai_use.tool_calls:
