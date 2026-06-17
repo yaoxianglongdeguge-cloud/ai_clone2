@@ -47,8 +47,7 @@ class Clone_ai:
     with open(self.role, 'r', encoding='utf-8') as f:
      role_input=f.read()
     send_mes = [
-        {"role":"system","content":"这是你的人设："+role_input},
-        {"role":"system","content":"这是你的记忆："+memory_input},
+        {"role":"system","content":"这是你的人设："+role_input+"。"+"这是你的记忆："+memory_input},
         {"role":"user","content":who+":"+out_input}
 
     ]
