@@ -41,7 +41,7 @@ if __name__=="__main__":
       print("请问您找谁? 请输入他的名字")
       print("若要停止请输入quit")
       agent_name=input()
-      if name=="quit":
+      if agent_name=="quit":
         break
       print(f"{agent_name}已经就绪")
       print("你：")
@@ -50,6 +50,8 @@ if __name__=="__main__":
       result=agents[agent_name].run_agent("user",out_input)
 
       while True:
+       if agent_call_queue:
+         break
        print("若要停止请输入quit")
        print("你：")
        out_input=input()

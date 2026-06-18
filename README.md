@@ -40,10 +40,22 @@
                      之后根据指令调用某个agent。（不过现在agent之间互相调用并不经过main
                       但我认为应该统一归到main）
 
-                      还有，agent是绝对严禁相互调用的，可以有一个中心agent管理流程，但是这个agent结构上和其他
+                      还有，agent是绝对严禁成环调用的，可以有一个中心agent管理流程，但是这个agent结构上和其他
                       agent是平等的。用户可以与任意一个agent直接对话。
-   
+
+根目录文件:
+      
+      agent_login:当用generate.py接口创建agent后会在这里注册，当启动main后会预加载所有agent
+
+      agent_call_queue:中心agent需要规划好流程发送到这里，就可以按流程执行
+
+      call_structure:规划好的流程要按照这个格式写
        
        
 那么流程就是generate.py创建agent，到tools文件夹，放好工具函数文件夹（文件夹名称和++main++里函数名称必须相同）注册，
 之后就可以调用了。人设的话在role.txt文件自己写就行，我认为没必要专门写个agent。
+
+
+tools制作规定:
+     1.除标准库外，其余导入均需要再函数内部。
+     2.工具不能修改工具文件夹外文件，但能读。
