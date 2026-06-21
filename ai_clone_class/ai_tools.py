@@ -12,7 +12,10 @@ class Ai_tools:
  def __init__(self,stay_dir:str):
   self.stay_dir=Path(stay_dir)/"ai_tools"/"tools"
 
+
   self.tools={}
+
+
   for dir_path in self.stay_dir.glob("*/"):
       
       function_name=dir_path.name
@@ -32,3 +35,5 @@ class Ai_tools:
       if hasattr(module, function_name):
        func = getattr(module, function_name)#获取函数
        self.tools[function_name]=func
+   
+

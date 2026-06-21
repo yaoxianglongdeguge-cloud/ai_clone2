@@ -1,36 +1,10 @@
 [
     {
-        "id":"1",
+        "all_agent":"",
         "agent":"manage_agent",
         "caller":"user",
-        "out_input":"你去做",
-        "need":[]
-    },
-
-      {
-        "id":"2",
-        "agent":"manage_agent",
-        "caller":"user",
-        "out_input":"你去做",
-        "need":[]
-     },
-
-    {
-        "id":"3",
-        "agent":"manage_agent",
-        "caller":"user",
-        "out_input":"你去做",
-        "need":[1]
-    },
-
-    {
-        "id":"3",
-        "agent":"manage_agent",
-        "caller":"user",
-        "out_input":"你去做",
-        "need":[2,3]
+        "out_input":"你去做"
     }
-
 
 ]
 
