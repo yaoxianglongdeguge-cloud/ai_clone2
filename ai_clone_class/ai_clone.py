@@ -67,7 +67,8 @@ class Clone_ai(threading.Thread):
         {"role":"system","content":"这是你的记忆："+memory_input},
         {"role": "system", "content":send_ruler },
         {"role": "system", "content":"这是除了user外所有人的名字，必须严格按照这个名字，区分大小写，不能随意修改"+self.all_name },
-        {"role": "system", "content":"你必须要在开头用'to name:'的格式注明，你要发送的人，name是那个人的名字,内容要写在下一行"},
+        {"role": "system", "content":"你必须要在开头用'to name:'的格式注明，你要发送的人，name是那个人的名字"},
+        {"role": "system", "content":"内容要写在to name的下一行"},
         {"role":"user","content":who+":"+out_input}
 
     ]
@@ -88,7 +89,6 @@ class Clone_ai(threading.Thread):
 
     ai_speak=ai_respon.choices[0].message.content
 
-    print(ai_speak)
 
     with open(self.memory,  'a', encoding='utf-8') as f:
       memory=f.write(f"\n我:{ai_speak}\n")
@@ -169,10 +169,13 @@ class Clone_ai(threading.Thread):
       outmes={
         "all_agent":"",
         "agent":target,
-        "caller":agent,
+        "caller":self.name,
         "out_input":content
         }
       
+      output = f"Me:{self.name}\nto {target}\n\n{content}\n\n"
+      print(output, flush=True)
+
       self.outbox.append(outmes)
       
 
