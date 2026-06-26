@@ -7,6 +7,6 @@ stay_dir_name=stay_dir.name
 
 def other_run_self(who:str,out_input:str):
     ai_name = Path(__file__).parent.name
-    me=ai_clone.Clone_ai(ai_name)
+    me=ai_clone.Clone_ai(ai_name,"")
     result=me.run_agent(who,out_input)
     return result
